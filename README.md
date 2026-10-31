@@ -93,7 +93,7 @@ Python and Git must be installed.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/saucedemo/saucedemo.git
+git clone https://github.com/lilymcui/saucedemo.git
 cd saucedemo
 ```
 ### Install Dependencies
@@ -147,13 +147,14 @@ The `problem_user` cannot correctly enter the last name during checkout, and thi
 
 ## 9. Continuous Integration
 
-GitHub Actions automatically runs the test suite when code is pushed or a pull request is opened.
+GitHub Actions automatically runs the test suite when code is pushed.
 
 The workflow:
 
 1. Checks out the repository.
 2. Sets up Python.
 3. Installs project dependencies.
-4. Executes the pytest test suite.
-5. Uploads the HTML report as a workflow artifact.
+4. Installs Chromium.
+5. Executes the pytest test suite.
+6. Uploads the HTML report and failure evidence as a workflow artifact.
 
