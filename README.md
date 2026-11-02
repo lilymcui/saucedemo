@@ -96,6 +96,14 @@ Python and Git must be installed.
 git clone https://github.com/lilymcui/saucedemo.git
 cd saucedemo
 ```
+
+### Create and Activate a Virtual Environment (Recommended)
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
 ### Install Dependencies
 
 ```bash
